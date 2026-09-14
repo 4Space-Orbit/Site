@@ -80,7 +80,7 @@ button { font: inherit; }
 }
 .header-link {
   font-size: 12px;
-  font-weight: 700;
+  font-weight: 600;
   letter-spacing: .09em;
   text-transform: uppercase;
   text-decoration: none;
@@ -117,7 +117,7 @@ button { font: inherit; }
 }
 .eyebrow {
   font-size: 11px;
-  font-weight: 700;
+  font-weight: 600;
   letter-spacing: .2em;
   margin: 0 0 24px;
   color: var(--green);
@@ -133,12 +133,13 @@ button { font: inherit; }
 .title-dot { color: var(--red); }
 .hero h1, .section-heading h2, .story-intro h2 {
   font-family: "Sora", sans-serif;
+  font-weight: 500;
   text-transform: uppercase;
-  font-size: clamp(50px, 6.1vw, 96px);
   line-height: .94;
   letter-spacing: -.07em;
   margin: 0;
 }
+.hero h1 { font-size: clamp(38px, 4.4vw, 68px); }
 .hero h1 em { font-style: normal; color: var(--green); }
 .hero-lead {
   font-size: clamp(16px, 1.5vw, 20px);
@@ -159,7 +160,7 @@ button { font: inherit; }
   padding: 18px 21px;
   border-radius: 2px;
   font-size: 12px;
-  font-weight: 700;
+  font-weight: 600;
   letter-spacing: .08em;
   text-transform: uppercase;
   transition: transform .25s ease, background .25s ease;
@@ -364,8 +365,8 @@ button { font: inherit; }
 .splash-three { right: 15%; top: 36%; width: 7px; height: 13px; transform: rotate(50deg) translateY(18px); }
 .assembly-ring { display: grid; place-items: center; }
 .assembly-ring span { font-size: 9px; color: white; opacity: .75; font-weight: 700; transform: translateY(-620%); }
-.ring-28 { width: 100%; height: 100%; border: clamp(20px, 3vw, 38px) solid var(--red); transform: translateZ(0) scale(.7); opacity: .18; }
-.ring-24 { width: 82%; height: 82%; border: clamp(18px, 2.7vw, 34px) solid var(--green); transform: translateZ(15px) scale(.85); opacity: .24; }
+.ring-24 { width: 100%; height: 100%; border: clamp(20px, 3vw, 38px) solid var(--red); transform: translateZ(0) scale(.7); opacity: .18; }
+.ring-20 { width: 82%; height: 82%; border: clamp(18px, 2.7vw, 34px) solid var(--green); transform: translateZ(15px) scale(.85); opacity: .24; }
 .assembly-lid {
   width: 64%;
   height: 64%;
@@ -399,19 +400,19 @@ button { font: inherit; }
   color: rgba(11,76,59,.72);
 }
 .orbit-mark b { display:inline-block; width: 4px; height: 4px; margin-left:3px; background:var(--red); border-radius:50%; }
-.config-stage[data-size="24"] .ring-24 { transform: translateZ(15px) scale(1); opacity: 1; filter: drop-shadow(0 4px 3px rgba(0,0,0,.1)); }
-.config-stage[data-size="28"] .ring-24 { transform: translateZ(15px) scale(1); opacity: 1; }
-.config-stage[data-size="28"] .ring-28 { transform: translateZ(0) scale(1); opacity: 1; filter: drop-shadow(0 4px 3px rgba(0,0,0,.1)); }
-.config-stage.trivet-mode .ring-28 {
+.config-stage[data-size="20"] .ring-20 { transform: translateZ(15px) scale(1); opacity: 1; filter: drop-shadow(0 4px 3px rgba(0,0,0,.1)); }
+.config-stage[data-size="24"] .ring-20 { transform: translateZ(15px) scale(1); opacity: 1; }
+.config-stage[data-size="24"] .ring-24 { transform: translateZ(0) scale(1); opacity: 1; filter: drop-shadow(0 4px 3px rgba(0,0,0,.1)); }
+.config-stage.trivet-mode .ring-24 {
   opacity: 1;
   transform: translate3d(92%, 20%, 80px) scale(.64);
   filter: drop-shadow(16px 22px 16px rgba(0,0,0,.25));
 }
-.config-stage.trivet-mode .ring-24 { transform: translateZ(15px) scale(1); opacity: 1; }
+.config-stage.trivet-mode .ring-20 { transform: translateZ(15px) scale(1); opacity: 1; }
 .config-stage.splash-mode .splash-pot { opacity: 1; transform: translate3d(0, 10%, -40px) scale(1); }
 .config-stage.splash-mode .assembly-lid { opacity: 0; transform: translateZ(70px) scale(.72); }
-.config-stage.splash-mode .ring-24 { opacity: 0; transform: translateZ(40px) scale(.72); }
-.config-stage.splash-mode .ring-28 { opacity: 1; transform: translateZ(48px) scale(1); filter: drop-shadow(0 10px 7px rgba(0,0,0,.18)); }
+.config-stage.splash-mode .ring-20 { opacity: 0; transform: translateZ(40px) scale(.72); }
+.config-stage.splash-mode .ring-24 { opacity: 1; transform: translateZ(48px) scale(1); filter: drop-shadow(0 10px 7px rgba(0,0,0,.18)); }
 .config-stage.splash-mode .splash { opacity: .9; transform: rotate(-15deg) translateY(0); }
 .config-stage.splash-mode .splash-two { transform: rotate(24deg) translateY(0); }
 .config-stage.splash-mode .splash-three { transform: rotate(50deg) translateY(0); }
@@ -465,7 +466,7 @@ button { font: inherit; }
 .size-choice:focus-visible, .mode-toggle:focus-visible, a:focus-visible { outline: 3px solid #c94355; outline-offset: 3px; }
 .configuration-detail { padding: 34px 4px 25px; flex:1; }
 .configuration-detail > p:first-child { font-size:9px; letter-spacing:.16em; font-weight:700; color:var(--red); margin:0 0 12px; }
-.configuration-detail h3 { font-family:"Sora",sans-serif; font-size:32px; text-transform:uppercase; letter-spacing:-.04em; margin:0 0 12px; }
+.configuration-detail h3 { font-family:"Sora",sans-serif; font-size:32px; font-weight:500; text-transform:uppercase; letter-spacing:-.04em; margin:0 0 12px; }
 .configuration-detail > p:nth-child(3) { font-size:13px; line-height:1.65; color:rgba(22,53,44,.65); margin:0 0 24px; }
 .parts-list { display:flex; flex-wrap:wrap; gap:9px 15px; font-size:9px; letter-spacing:.08em; text-transform:uppercase; }
 .parts-list span { display:flex; align-items:center; gap:6px; }
@@ -511,7 +512,7 @@ button { font: inherit; }
 .splash-icon b:nth-of-type(1) { transform:translate(-38px,-45px) rotate(-15deg); }
 .splash-icon b:nth-of-type(2) { transform:translate(28px,-52px) rotate(25deg); }
 .splash-icon b:nth-of-type(3) { transform:translate(58px,-24px) rotate(48deg); }
-.feature-grid h3 { font-family:"Sora",sans-serif; font-size:18px; text-transform:uppercase; letter-spacing:-.03em; margin:0 0 13px; }
+.feature-grid h3 { font-family:"Sora",sans-serif; font-size:18px; font-weight:500; text-transform:uppercase; letter-spacing:-.03em; margin:0 0 13px; }
 .feature-grid p { font-size:13px; line-height:1.6; color:rgba(22,53,44,.65); margin:0; max-width:320px; }
 .preorder {
   --product-colour: var(--red);
@@ -588,6 +589,7 @@ button { font: inherit; }
 .preorder-content .eyebrow { color: rgba(255,255,255,.68); margin-bottom: 20px; }
 .preorder-content h2 {
   margin: 0;
+  font-weight: 500;
   font-size: clamp(38px,4vw,62px);
   line-height: .98;
   letter-spacing: -.065em;
@@ -636,7 +638,7 @@ button { font: inherit; }
   background: white;
   text-decoration: none;
   font-size: 10px;
-  font-weight: 700;
+  font-weight: 600;
   letter-spacing: .09em;
   text-transform: uppercase;
   transition: color .25s ease, background .25s ease, transform .25s ease;
@@ -647,7 +649,7 @@ button { font: inherit; }
 .preorder-note { display: flex; align-items: center; gap: 8px; margin: 13px 0 0; color: rgba(255,255,255,.46); font-size: 9px; letter-spacing: .05em; }
 .preorder-note i { width: 6px; height: 6px; border-radius: 50%; background: var(--green); }
 .closing { display:flex; align-items:flex-end; justify-content:space-between; gap:30px; padding-top:100px; }
-.orbit-word { font-family:"Sora",sans-serif; font-size:clamp(54px,8vw,120px); font-weight:700; line-height:.8; letter-spacing:-.08em; color:var(--green); }
+.orbit-word { font-family:"Sora",sans-serif; font-size:clamp(54px,8vw,120px); font-weight:500; line-height:.8; letter-spacing:-.08em; color:var(--green); }
 .orbit-word b { display:inline-block; width:.11em; height:.11em; border-radius:50%; background:var(--red); margin-left:.05em; }
 .closing p { margin:30px 0 0; font-size:16px; color:rgba(22,53,44,.62); }
 .closing > a { text-decoration:none; text-transform:uppercase; font-size:10px; letter-spacing:.12em; font-weight:700; padding-bottom:9px; border-bottom:1px solid var(--red); }
@@ -687,7 +689,7 @@ footer small { opacity:.45; font-size:9px; letter-spacing:.1em; text-transform:u
   .footer-brand .logo-crop img { width:229px; left:-19px; top:-34px; }
   .header-link { font-size:10px; }
   .hero { min-height:auto; padding:120px 20px 55px; }
-  .hero h1 { font-size:clamp(43px,14vw,68px); }
+  .hero h1 { font-size:clamp(34px,9.8vw,48px); }
   .hero-lead { font-size:15px; margin:24px 0 30px; }
   .primary-button { width:100%; }
   .hero-object { height:450px; margin-top:15px; transform:translateX(-4%); }
@@ -711,7 +713,7 @@ footer small { opacity:.45; font-size:9px; letter-spacing:.1em; text-transform:u
   .size-choice:last-child { border-right:0; }
   .size-choice span { gap:5px; font-size:9px; }
   .size-choice:hover, .size-choice.active { padding:13px 5px; }
-  .config-stage.trivet-mode .ring-28 { transform:translate3d(50%,62%,80px) scale(.58); }
+  .config-stage.trivet-mode .ring-24 { transform:translate3d(50%,62%,80px) scale(.58); }
   .story-intro { flex-direction:column; align-items:flex-start; margin-bottom:45px; }
   .story-intro .eyebrow { order:0; }
   .feature-grid article { min-height:320px; padding:24px 20px; }
@@ -740,7 +742,8 @@ footer small { opacity:.45; font-size:9px; letter-spacing:.1em; text-transform:u
   .reveal { opacity:1; transform:none; }
 }
 
-    </style>
+</style>
+    
   </head>
   <body>
     <div class="noise" aria-hidden="true"></div>
@@ -779,26 +782,26 @@ footer small { opacity:.45; font-size:9px; letter-spacing:.1em; text-transform:u
         <div class="section-heading reveal">
           <p class="eyebrow"><span class="red-dot" aria-hidden="true"></span>CONFIGURATORE</p>
           <h2>Trova la misura<span class="title-dot">.</span><br />ORBIT fa il resto<span class="title-dot">.</span></h2>
-          <p>Componi i tre diametri, poi trasforma gli anelli in sottopentola o paraschizzi.</p>
+          <p>Componi i tre diametri da 16, 20 e 24 cm, poi trasforma gli anelli in sottopentola o paraschizzi.</p>
         </div>
 
         <div class="config-layout reveal">
-          <div class="config-stage" data-size="20">
+          <div class="config-stage" data-size="16">
             <div class="dimension-guide" aria-hidden="true">
               <span class="guide-line"></span>
-              <strong id="guide-value">Ø 20 CM</strong>
+              <strong id="guide-value">Ø 16 CM</strong>
             </div>
             <div class="product-assembly" aria-live="polite">
               <div class="assembly-shadow"></div>
               <div class="splash-pot" aria-hidden="true"><span></span><i class="splash splash-one"></i><i class="splash splash-two"></i><i class="splash splash-three"></i></div>
-              <div class="assembly-ring ring-28" aria-hidden="true"><span>02</span></div>
-              <div class="assembly-ring ring-24" aria-hidden="true"><span>01</span></div>
+              <div class="assembly-ring ring-24" aria-hidden="true"><span>02</span></div>
+              <div class="assembly-ring ring-20" aria-hidden="true"><span>01</span></div>
               <div class="assembly-lid" aria-hidden="true">
                 <div class="assembly-glass"></div>
                 <div class="assembly-handle"><i></i></div>
                 <span class="orbit-mark">ORBIT<b></b></span>
               </div>
-              <p class="sr-only" id="assembly-status">Configurazione base, diametro illustrativo 20 centimetri.</p>
+              <p class="sr-only" id="assembly-status">Configurazione base, diametro 16 centimetri.</p>
             </div>
             <div class="stage-caption">
               <span id="config-number">01 / 03</span>
@@ -808,14 +811,14 @@ footer small { opacity:.45; font-size:9px; letter-spacing:.1em; text-transform:u
 
           <aside class="config-panel">
             <div class="choice-group" role="radiogroup" aria-label="Scegli il diametro ORBIT">
-              <button class="size-choice active" type="button" role="radio" aria-checked="true" data-diameter="20" data-rings="0">
-                <span><i>01</i> Compatta</span><strong>Ø 20</strong>
+              <button class="size-choice active" type="button" role="radio" aria-checked="true" data-diameter="16" data-rings="0">
+                <span><i>01</i> Compatta</span><strong>Ø 16</strong>
               </button>
-              <button class="size-choice" type="button" role="radio" aria-checked="false" data-diameter="24" data-rings="1">
-                <span><i>02</i> Media</span><strong>Ø 24</strong>
+              <button class="size-choice" type="button" role="radio" aria-checked="false" data-diameter="20" data-rings="1">
+                <span><i>02</i> Media</span><strong>Ø 20</strong>
               </button>
-              <button class="size-choice" type="button" role="radio" aria-checked="false" data-diameter="28" data-rings="2">
-                <span><i>03</i> Ampia</span><strong>Ø 28</strong>
+              <button class="size-choice" type="button" role="radio" aria-checked="false" data-diameter="24" data-rings="2">
+                <span><i>03</i> Ampia</span><strong>Ø 24</strong>
               </button>
             </div>
 
@@ -843,7 +846,7 @@ footer small { opacity:.45; font-size:9px; letter-spacing:.1em; text-transform:u
                 <i aria-hidden="true">+</i>
               </button>
             </div>
-            <p class="measure-note">* Diametri illustrativi. Le quote definitive saranno allineate alle specifiche di produzione.</p>
+            <p class="measure-note">Misure disponibili: Ø 16, Ø 20 e Ø 24 cm.</p>
           </aside>
         </div>
       </section>
@@ -937,23 +940,23 @@ footer small { opacity:.45; font-size:9px; letter-spacing:.1em; text-transform:u
       <p>ORBIT — SPACE IS THE NEW LUXURY<span>.</span></p>
       <small>ORBIT — concept di prodotto 4Space</small>
     </footer>
-    <script>
+  <script>
 const configurations = {
-  20: {
+  16: {
     index: "01 / 03",
     title: "Essenziale",
     caption: "Solo coperchio base",
     copy: "Il coperchio base è pronto per le pentole più compatte. Gli extender restano ordinati e disponibili.",
     rings: 0,
   },
-  24: {
+  20: {
     index: "02 / 03",
     title: "Estesa",
     caption: "Base + extender 01",
     copy: "Il primo anello magnetico si unisce al coperchio e amplia la superficie con un solo gesto.",
     rings: 1,
   },
-  28: {
+  24: {
     index: "03 / 03",
     title: "Completa",
     caption: "Base + extender 01 + 02",
@@ -1002,7 +1005,7 @@ function setConfiguration(diameter) {
   dotBase.classList.add("on");
   dotOne.classList.toggle("on", config.rings >= 1);
   dotTwo.classList.toggle("on", config.rings >= 2);
-  status.textContent = `Configurazione ${config.title.toLowerCase()}, diametro illustrativo ${diameter} centimetri, ${config.caption.toLowerCase()}.`;
+  status.textContent = `Configurazione ${config.title.toLowerCase()}, diametro ${diameter} centimetri, ${config.caption.toLowerCase()}.`;
 
   choices.forEach((choice) => {
     const selected = choice.dataset.diameter === diameter;
@@ -1035,7 +1038,7 @@ modeButtons.forEach((button) => button.addEventListener("click", () => {
   button.setAttribute("aria-pressed", "true");
   if (mode === "trivet") {
     stage.classList.add("trivet-mode");
-    stage.dataset.size = "28";
+    stage.dataset.size = "24";
     guide.textContent = "SOTTOPENTOLA";
     configNumber.textContent = "FUNZIONE 02 / 03";
     configCopy.textContent = "Extender 02 come sottopentola";
@@ -1048,7 +1051,7 @@ modeButtons.forEach((button) => button.addEventListener("click", () => {
   }
   if (mode === "splash") {
     stage.classList.add("splash-mode");
-    stage.dataset.size = "28";
+    stage.dataset.size = "24";
     guide.textContent = "PARASCHIZZI";
     configNumber.textContent = "FUNZIONE 03 / 03";
     configCopy.textContent = "Un extender, centro aperto";
@@ -1107,9 +1110,9 @@ const observer = new IntersectionObserver(
 );
 document.querySelectorAll(".reveal").forEach((element) => observer.observe(element));
 
-setConfiguration("20");
+setConfiguration("16");
 updatePreorder();
 
-    </script>
-  </body>
+</script>
+</body>
 </html>
